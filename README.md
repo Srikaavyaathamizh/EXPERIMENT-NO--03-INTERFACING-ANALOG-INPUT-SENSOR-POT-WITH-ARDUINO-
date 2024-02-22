@@ -52,6 +52,7 @@ CIRCUIT DIAGRAM
 **FIGURE -01
 **
 
+
 **PROCEDURE:**
 
 1.	Connect the circuit as per the circuit diagram 
@@ -67,18 +68,48 @@ CIRCUIT DIAGRAM
 
 
 **PROGRAM** 
- 
+int led=4;
+int sensorpot;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+  
+}
+
+void loop()
+{
+  sensorpot=analogRead(A0);
+  //Serial.print("data=");
+  Serial.println(sensorpot);
+  delay(500);
+  if(sensorpot>500)
+  {
+    digitalWrite(led,HIGH);
+      delay(100);
+    digitalWrite(led,LOW);
+      delay(100);
+  }   
+  else
+  {
+    digitalWrite(led,LOW);
+      delay(100);
+  }}
+
+**serial Monitor**
+![Screenshot 2024-02-22 113108](https://github.com/Srikaavyaathamizh/EXPERIMENT-NO--03-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/144870938/faf4b190-5a8e-42f2-a1fc-177fecdb5a6c)
 
 
-
-
-
-
-
+**circuit view:**
+![Screenshot 2024-02-22 112529](https://github.com/Srikaavyaathamizh/EXPERIMENT-NO--03-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/144870938/56ecd2d9-e153-4540-aa2b-1030af5c47ac)
 
 
 **
 **Simulation output:** 
+
+![Screenshot 2024-02-22 113540](https://github.com/Srikaavyaathamizh/EXPERIMENT-NO--03-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/144870938/55a8cabf-7f8a-4836-b617-a32471cb7e27)
+
+
 **
 
 
