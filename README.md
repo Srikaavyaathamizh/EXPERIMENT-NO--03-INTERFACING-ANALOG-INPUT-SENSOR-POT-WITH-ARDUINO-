@@ -98,7 +98,8 @@ void loop()
   }}
 ```
 
-**serial Monitor**
+**serial Monitor:**
+
 ![Screenshot 2024-02-22 113108](https://github.com/Srikaavyaathamizh/EXPERIMENT-NO--03-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/144870938/faf4b190-5a8e-42f2-a1fc-177fecdb5a6c)
 
 
